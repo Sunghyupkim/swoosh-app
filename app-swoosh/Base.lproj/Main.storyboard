@@ -112,6 +112,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMenTapped:" destination="xJm-aR-JPd" eventType="touchUpInside" id="A4z-04-HZc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="do2-n0-Gq4" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="374" height="50"/>
@@ -123,6 +126,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="xJm-aR-JPd" eventType="touchUpInside" id="a9Q-3f-tdg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.69999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbW-Kw-3OJ" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="374" height="50"/>
@@ -134,6 +140,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="xJm-aR-JPd" eventType="touchUpInside" id="HeS-zP-u2A"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -185,6 +194,7 @@
                         <viewLayoutGuide key="safeArea" id="yJv-3A-K4w"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="Ef7-RO-sYr" id="fVX-3f-YVY"/>
                         <segue destination="jM0-TF-VQZ" kind="presentation" identifier="skillVCSegue" id="Vx3-46-3Kt"/>
                     </connections>
                 </viewController>
